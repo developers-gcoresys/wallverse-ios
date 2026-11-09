@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		271F201E83F6BA5F6E02A1D7 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 74755557F0D2E01A008FCC19 /* FirebaseFunctions */; };
+		3263C6D4C02F31C33777FE85 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA7F9068CF9AC30C53D1316 /* FirebaseAppCheck */; };
+		5212EC5D3027886EE0010E05 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2095E518BCBE8F7C07E89681 /* FirebaseCore */; };
+		7336718EA4942CED8CA4974B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 516805EE21CE8F537497C9AD /* GoogleMobileAds */; };
+		7EF33566ED2282EAB88D36B3 /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F20860C4E4A06177D123EA /* AdsManager.swift */; };
+		7F117DFB1088D6DA2E4ABD73 /* WallVerseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C4A507CF65B729E4BAF4E /* WallVerseApp.swift */; };
+		9365612F16C3447F58A5A626 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237F6C9023D5C82A91FF014B /* Assets.xcassets */; };
+		9577BE233BFE0B2DC9CAC41D /* WallpaperScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F777EBD2256A6780690FE6 /* WallpaperScreen.swift */; };
+		95885849FC39DED899B3CFEC /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFFB57695E5E3F87A2E62DC /* ShareSheet.swift */; };
+		981B13A118FB3D2870118635 /* FirebaseRuntime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C0D56DD300ECCE2F42FB23 /* FirebaseRuntime.swift */; };
+		A1D900215FCE3348CD618FAE /* ProManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0C5A5EC5A59E49F186AE98 /* ProManager.swift */; };
+		CA4706402D19396CCC855B90 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EE6AD8EFD3834BE049EBA846 /* FirebaseAuth */; };
+		CA8417DB6A7B41A383A102AC /* WallVerseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D4A998CF709D5583779DEA2A /* WallVerseCore */; };
+		CDC7EB7A7797B73B6950672B /* WallpaperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC54E068B801A9511E38D3 /* WallpaperModel.swift */; };
+		D81CCE85306211FFFB091A29 /* verses.json in Resources */ = {isa = PBXBuildFile; fileRef = 5152959BF2C6962A3861319A /* verses.json */; };
+		E60914668B9112D8641123F0 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 4E7ED93C7F2387043F490EC0 /* GoogleSignIn */; };
+		E61753BDA823E7DC1B48B80E /* WallpaperRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C939AF6075AE89FDAEC6E /* WallpaperRenderer.swift */; };
+		E87FAC8184104089309640ED /* UserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 6C2821FBF5A3420EAE7CDC6F /* UserMessagingPlatform */; };
+		EB08C9C5CCAC53B65E5F6499 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F2DE04348443438EA6ED6B89 /* Configuration.storekit */; };
+		F3AD8F9C8ABB93ADF6E5E1DF /* ProSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934744793EF56C0982D5A56F /* ProSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		15F777EBD2256A6780690FE6 /* WallpaperScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperScreen.swift; sourceTree = "<group>"; };
+		1921175F64FD6909377F8FD9 /* WallVerse.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = WallVerse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		237F6C9023D5C82A91FF014B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		326095A6BF7FD33A40AF5C62 /* WallVerseCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WallVerseCore; path = WallVerseCore; sourceTree = SOURCE_ROOT; };
+		5152959BF2C6962A3861319A /* verses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = verses.json; sourceTree = "<group>"; };
+		546C4A507CF65B729E4BAF4E /* WallVerseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallVerseApp.swift; sourceTree = "<group>"; };
+		54F20860C4E4A06177D123EA /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
+		6CFFB57695E5E3F87A2E62DC /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		83C0D56DD300ECCE2F42FB23 /* FirebaseRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRuntime.swift; sourceTree = "<group>"; };
+		934744793EF56C0982D5A56F /* ProSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSheet.swift; sourceTree = "<group>"; };
+		DF0C5A5EC5A59E49F186AE98 /* ProManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProManager.swift; sourceTree = "<group>"; };
+		EBFC54E068B801A9511E38D3 /* WallpaperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperModel.swift; sourceTree = "<group>"; };
+		F2DE04348443438EA6ED6B89 /* Configuration.storekit */ = {isa = PBXFileReference; path = Configuration.storekit; sourceTree = "<group>"; };
+		FA7C939AF6075AE89FDAEC6E /* WallpaperRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperRenderer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D04E5B0D9C0D3B5F171DA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8417DB6A7B41A383A102AC /* WallVerseCore in Frameworks */,
+				5212EC5D3027886EE0010E05 /* FirebaseCore in Frameworks */,
+				CA4706402D19396CCC855B90 /* FirebaseAuth in Frameworks */,
+				271F201E83F6BA5F6E02A1D7 /* FirebaseFunctions in Frameworks */,
+				3263C6D4C02F31C33777FE85 /* FirebaseAppCheck in Frameworks */,
+				E60914668B9112D8641123F0 /* GoogleSignIn in Frameworks */,
+				7336718EA4942CED8CA4974B /* GoogleMobileAds in Frameworks */,
+				E87FAC8184104089309640ED /* UserMessagingPlatform in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1785DD87DF5DFF64157FAA8B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8F0F802940112ED04FCC20FB /* Resources */,
+				3712DBF42DEB9E0329A8C688 /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		277AA2AAD1C4A3217697E977 = {
+			isa = PBXGroup;
+			children = (
+				1785DD87DF5DFF64157FAA8B /* App */,
+				B585196261A2A29E569D877F /* Packages */,
+				DBB4C70B53D392A4B63A0AB1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3712DBF42DEB9E0329A8C688 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				54F20860C4E4A06177D123EA /* AdsManager.swift */,
+				83C0D56DD300ECCE2F42FB23 /* FirebaseRuntime.swift */,
+				DF0C5A5EC5A59E49F186AE98 /* ProManager.swift */,
+				934744793EF56C0982D5A56F /* ProSheet.swift */,
+				6CFFB57695E5E3F87A2E62DC /* ShareSheet.swift */,
+				EBFC54E068B801A9511E38D3 /* WallpaperModel.swift */,
+				FA7C939AF6075AE89FDAEC6E /* WallpaperRenderer.swift */,
+				15F777EBD2256A6780690FE6 /* WallpaperScreen.swift */,
+				546C4A507CF65B729E4BAF4E /* WallVerseApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8F0F802940112ED04FCC20FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				237F6C9023D5C82A91FF014B /* Assets.xcassets */,
+				F2DE04348443438EA6ED6B89 /* Configuration.storekit */,
+				5152959BF2C6962A3861319A /* verses.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B585196261A2A29E569D877F /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				326095A6BF7FD33A40AF5C62 /* WallVerseCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		DBB4C70B53D392A4B63A0AB1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1921175F64FD6909377F8FD9 /* WallVerse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C9A6FAC7C0B020AE653F9B9 /* WallVerse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7A3F0DFC66CA36F1F191E9E /* Build configuration list for PBXNativeTarget "WallVerse" */;
+			buildPhases = (
+				A5C03AB809DC11C7D95E6BAF /* Sources */,
+				4C32D6E72511FAF978BACA0E /* Resources */,
+				4D04E5B0D9C0D3B5F171DA4C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallVerse;
+			packageProductDependencies = (
+				D4A998CF709D5583779DEA2A /* WallVerseCore */,
+				2095E518BCBE8F7C07E89681 /* FirebaseCore */,
+				EE6AD8EFD3834BE049EBA846 /* FirebaseAuth */,
+				74755557F0D2E01A008FCC19 /* FirebaseFunctions */,
+				9FA7F9068CF9AC30C53D1316 /* FirebaseAppCheck */,
+				4E7ED93C7F2387043F490EC0 /* GoogleSignIn */,
+				516805EE21CE8F537497C9AD /* GoogleMobileAds */,
+				6C2821FBF5A3420EAE7CDC6F /* UserMessagingPlatform */,
+			);
+			productName = WallVerse;
+			productReference = 1921175F64FD6909377F8FD9 /* WallVerse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAD2CEF2A53B16F6C352E2BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2C9A6FAC7C0B020AE653F9B9 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6AFB49217E239504BEC1179F /* Build configuration list for PBXProject "WallVerse" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 277AA2AAD1C4A3217697E977;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D209EEF0C3400D33E2CB848F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1DD7982227826FAE51C31817 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+				664E8A7A19823E055F513626 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				3645B5F745A2758D604E36D7 /* XCLocalSwiftPackageReference "WallVerseCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DBB4C70B53D392A4B63A0AB1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C9A6FAC7C0B020AE653F9B9 /* WallVerse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C32D6E72511FAF978BACA0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9365612F16C3447F58A5A626 /* Assets.xcassets in Resources */,
+				EB08C9C5CCAC53B65E5F6499 /* Configuration.storekit in Resources */,
+				D81CCE85306211FFFB091A29 /* verses.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5C03AB809DC11C7D95E6BAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EF33566ED2282EAB88D36B3 /* AdsManager.swift in Sources */,
+				981B13A118FB3D2870118635 /* FirebaseRuntime.swift in Sources */,
+				A1D900215FCE3348CD618FAE /* ProManager.swift in Sources */,
+				F3AD8F9C8ABB93ADF6E5E1DF /* ProSheet.swift in Sources */,
+				95885849FC39DED899B3CFEC /* ShareSheet.swift in Sources */,
+				7F117DFB1088D6DA2E4ABD73 /* WallVerseApp.swift in Sources */,
+				CDC7EB7A7797B73B6950672B /* WallpaperModel.swift in Sources */,
+				E61753BDA823E7DC1B48B80E /* WallpaperRenderer.swift in Sources */,
+				9577BE233BFE0B2DC9CAC41D /* WallpaperScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B613E4864E3D54A6D8598C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/WallVerse.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gcoreapps.wallverse;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B985FE2B84E152206ED0685C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = App/WallVerse.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gcoreapps.wallverse;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E3F541164F1CF98618726B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited) -ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E905B4925A84F780D0D22F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "$(inherited) -ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AFB49217E239504BEC1179F /* Build configuration list for PBXProject "WallVerse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F541164F1CF98618726B04 /* Debug */,
+				E905B4925A84F780D0D22F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F7A3F0DFC66CA36F1F191E9E /* Build configuration list for PBXNativeTarget "WallVerse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B985FE2B84E152206ED0685C /* Debug */,
+				B613E4864E3D54A6D8598C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		3645B5F745A2758D604E36D7 /* XCLocalSwiftPackageReference "WallVerseCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = WallVerseCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1DD7982227826FAE51C31817 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		664E8A7A19823E055F513626 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		D209EEF0C3400D33E2CB848F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2095E518BCBE8F7C07E89681 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D209EEF0C3400D33E2CB848F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		4E7ED93C7F2387043F490EC0 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 664E8A7A19823E055F513626 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		516805EE21CE8F537497C9AD /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DD7982227826FAE51C31817 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+		6C2821FBF5A3420EAE7CDC6F /* UserMessagingPlatform */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1DD7982227826FAE51C31817 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = UserMessagingPlatform;
+		};
+		74755557F0D2E01A008FCC19 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D209EEF0C3400D33E2CB848F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		9FA7F9068CF9AC30C53D1316 /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D209EEF0C3400D33E2CB848F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		D4A998CF709D5583779DEA2A /* WallVerseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = WallVerseCore;
+		};
+		EE6AD8EFD3834BE049EBA846 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D209EEF0C3400D33E2CB848F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FAD2CEF2A53B16F6C352E2BA /* Project object */;
+}

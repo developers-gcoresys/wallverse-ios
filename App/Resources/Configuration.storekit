@@ -1,0 +1,78 @@
+{
+  "identifier" : "gcoreapps-wallverse",
+  "nonRenewingSubscriptions" : [
+  ],
+  "products" : [
+  ],
+  "settings" : {
+    "_applicationInternalID" : "0000000000",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 0,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "21365433",
+      "localizations" : [
+      ],
+      "name" : "Pro",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+          ],
+          "codeOffers" : [
+          ],
+          "displayPrice" : "1.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "1234567893",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "All wallpaper styles and no ads.",
+              "displayName" : "Pro Monthly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "pro_monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Pro Monthly",
+          "subscriptionGroupID" : "21365433",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+          ],
+          "codeOffers" : [
+          ],
+          "displayPrice" : "14.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "1234567894",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "All wallpaper styles and no ads.",
+              "displayName" : "Pro Yearly",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "pro_yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Pro Yearly",
+          "subscriptionGroupID" : "21365433",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

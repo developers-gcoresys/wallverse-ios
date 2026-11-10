@@ -21,10 +21,6 @@ struct WallVerseApp: App {
                 .environmentObject(model)
                 .environmentObject(pro)
                 .environmentObject(ads)
-                .task {
-                    model.start()
-                    await pro.refreshEntitlement()
-                }
         }
     }
 }

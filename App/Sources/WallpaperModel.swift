@@ -69,6 +69,14 @@ final class WallpaperModel: ObservableObject {
         self.style = style
     }
 
+    /// Falls back to the free style when Pro is not active, including after an
+    /// expiry or sign-out.
+    func enforceEntitlement() {
+        if style.isPro, !pro.isPro {
+            style = .softLight
+        }
+    }
+
     func refreshPreview() {
         preview = WallpaperRenderer.preview(for: currentVerse, style: style)
     }

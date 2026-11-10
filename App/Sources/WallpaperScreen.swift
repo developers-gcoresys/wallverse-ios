@@ -77,6 +77,14 @@ struct WallpaperScreen: View {
                 if model.toast == value { model.toast = nil }
             }
         }
+        .onChange(of: pro.isPro) { _, _ in
+            model.enforceEntitlement()
+        }
+        .task {
+            model.start()
+            await pro.refreshEntitlement()
+            model.enforceEntitlement()
+        }
     }
 
     private var header: some View {

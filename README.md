@@ -71,8 +71,8 @@ and App Attest will not work.
 2. Add `GoogleService-Info.plist` to `App/Resources/` (gitignored).
 3. Add its reversed client ID as a URL scheme in `App/Info.plist`, replacing
    `REPLACE_WITH_REVERSED_CLIENT_ID`.
-4. The backend uses `FIREBASE_APP_ID_WALLVERSE` for both Android and iOS App
-   Check registration.
+4. Set `FIREBASE_APP_ID_WALLVERSE` in the backend deployment to the Android and
+   iOS Firebase App IDs as a comma-separated value.
 5. Enable Google and Apple sign-in in Firebase Authentication.
 6. Enable App Check: App Attest for release, debug provider for the simulator.
 

@@ -10,8 +10,9 @@
 - [ ] Create `pro_monthly` and `pro_yearly` subscriptions in App Store Connect.
 - [ ] Create the App Store Server API key and set `APP_STORE_ISSUER_ID`,
       `APP_STORE_KEY_ID`, and `APP_STORE_PRIVATE_KEY` in `gcoreapps-backend`.
-- [ ] Add App Store Server Notifications V2 to the backend so renewals/refunds
-      update without an app launch.
+- [x] Backend endpoint for App Store Server Notifications V2.
+- [ ] Register the notification URL (with `APP_STORE_NOTIFICATION_TOKEN`) in
+      App Store Connect so renewals/refunds update without an app launch.
 - [ ] Replace Google test AdMob IDs with production iOS app/banner/interstitial
       IDs and configure the UMP privacy message.
 - [ ] Run a full sandbox purchase/restore/cancel/refund pass.
@@ -21,8 +22,10 @@
 
 ## Next features
 
-- [ ] WidgetKit daily verse widget.
-- [ ] Daily verse notification with a configurable time.
+- [x] WidgetKit daily verse widget.
+- [x] Daily verse notification at 8:00 (30-day rolling window).
+- [ ] Configurable notification time.
+- [x] Privacy manifest (`App/Resources/PrivacyInfo.xcprivacy`).
 - [ ] Verse favorites and a recents list, synced locally.
 - [ ] More text layouts (top-aligned, large single-line) and font choices.
 - [ ] Share-card export with a small WallVerse mark.

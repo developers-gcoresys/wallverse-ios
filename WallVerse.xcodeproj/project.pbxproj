@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1684BF14A5BAEC1F19AF7F3C /* WallVerseWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7DC185382CC8EFE79E745A78 /* WallVerseWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		19BBF48C9AB9E6164B7E70F7 /* WallVerseWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD2EFE74A493D14B5D1F61A /* WallVerseWidget.swift */; };
 		271F201E83F6BA5F6E02A1D7 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 74755557F0D2E01A008FCC19 /* FirebaseFunctions */; };
+		2D07CAE3740A9BC63ACA63D5 /* verses.json in Resources */ = {isa = PBXBuildFile; fileRef = 5152959BF2C6962A3861319A /* verses.json */; };
 		3263C6D4C02F31C33777FE85 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA7F9068CF9AC30C53D1316 /* FirebaseAppCheck */; };
 		42F6E95EF15C9B458DAA1A99 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C0F356CC8F9F2506AD64A1ED /* PrivacyInfo.xcprivacy */; };
 		5212EC5D3027886EE0010E05 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2095E518BCBE8F7C07E89681 /* FirebaseCore */; };
@@ -27,8 +30,33 @@
 		E61753BDA823E7DC1B48B80E /* WallpaperRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7C939AF6075AE89FDAEC6E /* WallpaperRenderer.swift */; };
 		E87FAC8184104089309640ED /* UserMessagingPlatform in Frameworks */ = {isa = PBXBuildFile; productRef = 6C2821FBF5A3420EAE7CDC6F /* UserMessagingPlatform */; };
 		EB08C9C5CCAC53B65E5F6499 /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = F2DE04348443438EA6ED6B89 /* Configuration.storekit */; };
+		F2432187F064BBC43ADF27BB /* DailyVerse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752581F478A9E4C55BAA9C4D /* DailyVerse.swift */; };
 		F3AD8F9C8ABB93ADF6E5E1DF /* ProSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934744793EF56C0982D5A56F /* ProSheet.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE802A49190C1E838B7644B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAD2CEF2A53B16F6C352E2BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93123A85688B883BE3FE03A;
+			remoteInfo = WallVerseWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		409EEF0FB3F0A62B0C601D57 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1684BF14A5BAEC1F19AF7F3C /* WallVerseWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		15F777EBD2256A6780690FE6 /* WallpaperScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperScreen.swift; sourceTree = "<group>"; };
@@ -39,11 +67,15 @@
 		546C4A507CF65B729E4BAF4E /* WallVerseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallVerseApp.swift; sourceTree = "<group>"; };
 		54F20860C4E4A06177D123EA /* AdsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsManager.swift; sourceTree = "<group>"; };
 		6CFFB57695E5E3F87A2E62DC /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		752581F478A9E4C55BAA9C4D /* DailyVerse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyVerse.swift; sourceTree = "<group>"; };
+		7DC185382CC8EFE79E745A78 /* WallVerseWidget.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = WallVerseWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		83C0D56DD300ECCE2F42FB23 /* FirebaseRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRuntime.swift; sourceTree = "<group>"; };
 		934744793EF56C0982D5A56F /* ProSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSheet.swift; sourceTree = "<group>"; };
+		AA104CECC10A0DA2EF5EABD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C0F356CC8F9F2506AD64A1ED /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DF0C5A5EC5A59E49F186AE98 /* ProManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProManager.swift; sourceTree = "<group>"; };
 		EBFC54E068B801A9511E38D3 /* WallpaperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperModel.swift; sourceTree = "<group>"; };
+		EFD2EFE74A493D14B5D1F61A /* WallVerseWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallVerseWidget.swift; sourceTree = "<group>"; };
 		F2DE04348443438EA6ED6B89 /* Configuration.storekit */ = {isa = PBXFileReference; path = Configuration.storekit; sourceTree = "<group>"; };
 		FA7C939AF6075AE89FDAEC6E /* WallpaperRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperRenderer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,11 +99,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE3AEC903A89ABA2BDCC219 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				AA104CECC10A0DA2EF5EABD9 /* Info.plist */,
+				EFD2EFE74A493D14B5D1F61A /* WallVerseWidget.swift */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
 		1785DD87DF5DFF64157FAA8B /* App */ = {
 			isa = PBXGroup;
 			children = (
 				8F0F802940112ED04FCC20FB /* Resources */,
 				3712DBF42DEB9E0329A8C688 /* Sources */,
+				0CE3AEC903A89ABA2BDCC219 /* Widget */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -89,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				54F20860C4E4A06177D123EA /* AdsManager.swift */,
+				752581F478A9E4C55BAA9C4D /* DailyVerse.swift */,
 				83C0D56DD300ECCE2F42FB23 /* FirebaseRuntime.swift */,
 				DF0C5A5EC5A59E49F186AE98 /* ProManager.swift */,
 				934744793EF56C0982D5A56F /* ProSheet.swift */,
@@ -124,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				1921175F64FD6909377F8FD9 /* WallVerse.app */,
+				7DC185382CC8EFE79E745A78 /* WallVerseWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,10 +182,12 @@
 				A5C03AB809DC11C7D95E6BAF /* Sources */,
 				4C32D6E72511FAF978BACA0E /* Resources */,
 				4D04E5B0D9C0D3B5F171DA4C /* Frameworks */,
+				409EEF0FB3F0A62B0C601D57 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1877888560D425C602325A8F /* PBXTargetDependency */,
 			);
 			name = WallVerse;
 			packageProductDependencies = (
@@ -158,6 +204,24 @@
 			productReference = 1921175F64FD6909377F8FD9 /* WallVerse.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D93123A85688B883BE3FE03A /* WallVerseWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1618E5B8B3C437F914A885FF /* Build configuration list for PBXNativeTarget "WallVerseWidget" */;
+			buildPhases = (
+				183581736936CA80B3FD4E84 /* Sources */,
+				52B37D74261368F7B979345A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallVerseWidget;
+			packageProductDependencies = (
+			);
+			productName = WallVerseWidget;
+			productReference = 7DC185382CC8EFE79E745A78 /* WallVerseWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +232,10 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2C9A6FAC7C0B020AE653F9B9 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					D93123A85688B883BE3FE03A = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
@@ -194,6 +262,7 @@
 			projectRoot = "";
 			targets = (
 				2C9A6FAC7C0B020AE653F9B9 /* WallVerse */,
+				D93123A85688B883BE3FE03A /* WallVerseWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -210,14 +279,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		52B37D74261368F7B979345A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D07CAE3740A9BC63ACA63D5 /* verses.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		183581736936CA80B3FD4E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19BBF48C9AB9E6164B7E70F7 /* WallVerseWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5C03AB809DC11C7D95E6BAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7EF33566ED2282EAB88D36B3 /* AdsManager.swift in Sources */,
+				F2432187F064BBC43ADF27BB /* DailyVerse.swift in Sources */,
 				981B13A118FB3D2870118635 /* FirebaseRuntime.swift in Sources */,
 				A1D900215FCE3348CD618FAE /* ProManager.swift in Sources */,
 				F3AD8F9C8ABB93ADF6E5E1DF /* ProSheet.swift in Sources */,
@@ -231,7 +317,47 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1877888560D425C602325A8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D93123A85688B883BE3FE03A /* WallVerseWidget */;
+			targetProxy = BE802A49190C1E838B7644B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3C9CC9E92043125AB2E6CDBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = App/Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gcoreapps.wallverse.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		943A0B14C7615B0DBF241736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = App/Widget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gcoreapps.wallverse.widget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
 		B613E4864E3D54A6D8598C3D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,6 +528,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1618E5B8B3C437F914A885FF /* Build configuration list for PBXNativeTarget "WallVerseWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943A0B14C7615B0DBF241736 /* Debug */,
+				3C9CC9E92043125AB2E6CDBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 		6AFB49217E239504BEC1179F /* Build configuration list for PBXProject "WallVerse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

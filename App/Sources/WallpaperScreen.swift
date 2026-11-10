@@ -84,6 +84,7 @@ struct WallpaperScreen: View {
             model.start()
             await pro.refreshEntitlement()
             model.enforceEntitlement()
+            await DailyVerseNotifier.refreshIfEnabled()
         }
     }
 

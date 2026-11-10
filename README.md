@@ -99,6 +99,21 @@ eligible after 8 **New verse** taps, with a 4-minute cooldown and at most 2 per
 app session. Pro users see no banner and no interstitial. No ad is requested
 before UMP consent is available.
 
+## Widgets, notifications, and privacy
+
+The `WallVerseWidget` app extension shows the verse of the day in small, medium,
+and large sizes, cycling through the bundled verses and the five style palettes.
+It reads its own copy of `App/Resources/verses.json`, so no App Group or shared
+container is needed. The extension bundle ID is `com.gcoreapps.wallverse.widget`.
+
+`App/Sources/DailyVerse.swift` schedules 30 days of 8:00 local notifications from
+the same rotation and refreshes at launch and when the Pro sheet opens. The
+toggle lives in the Pro sheet under Notifications.
+
+Both apps ship `App/Resources/PrivacyInfo.xcprivacy` declaring UserDefaults
+(required-reason API) plus the account, purchase, and advertising data the app
+collects. Keep it in sync if you add another required-reason API or SDK.
+
 ## Content
 
 `App/Resources/verses.json` is copied from WallVerse Android and uses

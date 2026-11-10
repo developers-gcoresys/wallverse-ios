@@ -113,6 +113,14 @@ final class WallpaperModel: ObservableObject {
         static let style = "wallverse.style"
         static let index = "wallverse.index"
     }
+
+    /// Removes device-only preferences when the user deletes their account.
+    func clearLocalData() {
+        defaults.removeObject(forKey: Keys.style)
+        defaults.removeObject(forKey: Keys.index)
+        style = .softLight
+        index = 0
+    }
 }
 
 @MainActor

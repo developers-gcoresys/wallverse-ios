@@ -40,7 +40,7 @@ struct WallpaperScreen: View {
             }
             .background(WallVersePalette.cream)
 
-            if !pro.isPro && ads.consentReady {
+            if ads.adsEnabled && !pro.isPro && ads.consentReady {
                 Divider()
                 BannerAdView(unitID: ads.bannerUnitID)
                     .frame(height: 50)
@@ -77,10 +77,12 @@ struct WallpaperScreen: View {
                 if model.toast == value { model.toast = nil }
             }
         }
-        .onChange(of: pro.isPro) { _, _ in
+        .onChange(of: pro.isPro) { _, isPro in
+            ads.setEnabled(!isPro)
             model.enforceEntitlement()
         }
         .task {
+            ads.setEnabled(!pro.isPro)
             model.start()
             await pro.refreshEntitlement()
             model.enforceEntitlement()

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		271F201E83F6BA5F6E02A1D7 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 74755557F0D2E01A008FCC19 /* FirebaseFunctions */; };
 		3263C6D4C02F31C33777FE85 /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA7F9068CF9AC30C53D1316 /* FirebaseAppCheck */; };
+		42F6E95EF15C9B458DAA1A99 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = C0F356CC8F9F2506AD64A1ED /* PrivacyInfo.xcprivacy */; };
 		5212EC5D3027886EE0010E05 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 2095E518BCBE8F7C07E89681 /* FirebaseCore */; };
 		7336718EA4942CED8CA4974B /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 516805EE21CE8F537497C9AD /* GoogleMobileAds */; };
 		7EF33566ED2282EAB88D36B3 /* AdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F20860C4E4A06177D123EA /* AdsManager.swift */; };
@@ -40,6 +41,7 @@
 		6CFFB57695E5E3F87A2E62DC /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		83C0D56DD300ECCE2F42FB23 /* FirebaseRuntime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseRuntime.swift; sourceTree = "<group>"; };
 		934744793EF56C0982D5A56F /* ProSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProSheet.swift; sourceTree = "<group>"; };
+		C0F356CC8F9F2506AD64A1ED /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		DF0C5A5EC5A59E49F186AE98 /* ProManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProManager.swift; sourceTree = "<group>"; };
 		EBFC54E068B801A9511E38D3 /* WallpaperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpaperModel.swift; sourceTree = "<group>"; };
 		F2DE04348443438EA6ED6B89 /* Configuration.storekit */ = {isa = PBXFileReference; path = Configuration.storekit; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				237F6C9023D5C82A91FF014B /* Assets.xcassets */,
 				F2DE04348443438EA6ED6B89 /* Configuration.storekit */,
+				C0F356CC8F9F2506AD64A1ED /* PrivacyInfo.xcprivacy */,
 				5152959BF2C6962A3861319A /* verses.json */,
 			);
 			path = Resources;
@@ -202,6 +205,7 @@
 			files = (
 				9365612F16C3447F58A5A626 /* Assets.xcassets in Resources */,
 				EB08C9C5CCAC53B65E5F6499 /* Configuration.storekit in Resources */,
+				42F6E95EF15C9B458DAA1A99 /* PrivacyInfo.xcprivacy in Resources */,
 				D81CCE85306211FFFB091A29 /* verses.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

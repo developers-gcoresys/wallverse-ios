@@ -95,7 +95,7 @@ Ad IDs live in `App/Info.plist` (`GADApplicationIdentifier`,
 before release.
 
 `WallVerseCore/WallpaperAdSession` mirrors Android: an interstitial becomes
-eligible after 8 **New verse** taps, with a 4-minute cooldown and at most 2 per
+eligible after 4 **New verse** taps, with a 2-minute cooldown and at most 4 per
 app session. Pro users see no banner and no interstitial. No ad is requested
 before UMP consent is available.
 

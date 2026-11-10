@@ -94,7 +94,7 @@ public struct WallpaperAdSession: Sendable, Equatable {
     public private(set) var adsShown: Int
     public private(set) var lastAdAt: Date?
 
-    public init(tapsPerAd: Int = 8, cooldown: TimeInterval = 240, maxAdsPerSession: Int = 2) {
+    public init(tapsPerAd: Int = 4, cooldown: TimeInterval = 120, maxAdsPerSession: Int = 4) {
         self.tapsPerAd = tapsPerAd
         self.cooldown = cooldown
         self.maxAdsPerSession = maxAdsPerSession

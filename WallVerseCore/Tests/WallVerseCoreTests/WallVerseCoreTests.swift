@@ -25,21 +25,31 @@ final class WallVerseCoreTests: XCTestCase {
     }
 
     func testAdPolicyRequiresTapsCooldownAndSessionCap() {
-        var session = WallpaperAdSession(tapsPerAd: 8, cooldown: 240, maxAdsPerSession: 2)
+        var session = WallpaperAdSession(tapsPerAd: 4, cooldown: 120, maxAdsPerSession: 4)
         let start = Date(timeIntervalSince1970: 1_000_000)
 
-        for _ in 0..<7 { XCTAssertFalse(session.recordNewVerse(at: start)) }
+        for _ in 0..<3 { XCTAssertFalse(session.recordNewVerse(at: start)) }
         XCTAssertTrue(session.recordNewVerse(at: start))
         session.markAdShown(at: start)
         XCTAssertEqual(session.adsShown, 1)
 
-        for _ in 0..<8 { _ = session.recordNewVerse(at: start.addingTimeInterval(60)) }
+        for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(60)) }
         XCTAssertFalse(session.recordNewVerse(at: start.addingTimeInterval(60)))
 
-        for _ in 0..<8 { _ = session.recordNewVerse(at: start.addingTimeInterval(241)) }
-        XCTAssertTrue(session.recordNewVerse(at: start.addingTimeInterval(242)))
-        session.markAdShown(at: start.addingTimeInterval(242))
+        for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(121)) }
+        XCTAssertTrue(session.recordNewVerse(at: start.addingTimeInterval(121)))
+        session.markAdShown(at: start.addingTimeInterval(121))
         XCTAssertEqual(session.adsShown, 2)
+
+        for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(1000)) }
+        XCTAssertTrue(session.recordNewVerse(at: start.addingTimeInterval(1000)))
+        session.markAdShown(at: start.addingTimeInterval(1000))
+        XCTAssertEqual(session.adsShown, 3)
+
+        for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(2000)) }
+        XCTAssertTrue(session.recordNewVerse(at: start.addingTimeInterval(2000)))
+        session.markAdShown(at: start.addingTimeInterval(2000))
+        XCTAssertEqual(session.adsShown, 4)
 
         for _ in 0..<50 { XCTAssertFalse(session.recordNewVerse(at: start.addingTimeInterval(10_000))) }
     }

@@ -37,18 +37,28 @@ expect(WallpaperStyle.forest.isPro, "forest is Pro")
 expect(WallpaperStyle.allCases.count == 5, "five styles")
 expect(WallpaperStyle.softLight.backgroundHex == "F7F4ED", "background hex")
 
-var session = WallpaperAdSession(tapsPerAd: 8, cooldown: 240, maxAdsPerSession: 2)
+var session = WallpaperAdSession(tapsPerAd: 4, cooldown: 120, maxAdsPerSession: 4)
 let start = Date(timeIntervalSince1970: 1_000_000)
-for _ in 0..<7 { expect(!session.recordNewVerse(at: start), "ad not due before 8 taps") }
-expect(session.recordNewVerse(at: start), "ad due at 8 taps")
+for _ in 0..<3 { expect(!session.recordNewVerse(at: start), "ad not due before 4 taps") }
+expect(session.recordNewVerse(at: start), "ad due at 4 taps")
 session.markAdShown(at: start)
 expect(session.adsShown == 1, "first ad recorded")
 
-for _ in 0..<8 { _ = session.recordNewVerse(at: start.addingTimeInterval(60)) }
+for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(60)) }
 expect(!session.recordNewVerse(at: start.addingTimeInterval(60)), "cooldown blocks")
-for _ in 0..<8 { _ = session.recordNewVerse(at: start.addingTimeInterval(241)) }
-expect(session.recordNewVerse(at: start.addingTimeInterval(242)), "second ad after cooldown")
-session.markAdShown(at: start.addingTimeInterval(242))
+for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(121)) }
+expect(session.recordNewVerse(at: start.addingTimeInterval(121)), "second ad after cooldown")
+session.markAdShown(at: start.addingTimeInterval(121))
+
+for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(1000)) }
+expect(session.recordNewVerse(at: start.addingTimeInterval(1000)), "third ad after cooldown")
+session.markAdShown(at: start.addingTimeInterval(1000))
+
+for _ in 0..<4 { _ = session.recordNewVerse(at: start.addingTimeInterval(2000)) }
+expect(session.recordNewVerse(at: start.addingTimeInterval(2000)), "fourth ad after cooldown")
+session.markAdShown(at: start.addingTimeInterval(2000))
+expect(session.adsShown == 4, "four ads recorded")
+
 for _ in 0..<50 { expect(!session.recordNewVerse(at: start.addingTimeInterval(10_000)), "session cap") }
 
 let entitlementJSON = """

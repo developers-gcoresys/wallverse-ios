@@ -60,6 +60,17 @@ expect(entitlement.isActivePro(at: Date(timeIntervalSince1970: 1_780_000_000)), 
 expect(!entitlement.isActivePro(at: Date(timeIntervalSince1970: 1_900_000_000)), "expired after expiry")
 expect(!ProEntitlement.inactive.isActivePro(), "inactive is not Pro")
 
+// Guard against a truncated or silently drifted bundled verse list.
+let bundledVersesURL = URL(fileURLWithPath: "../App/Resources/verses.json")
+if FileManager.default.fileExists(atPath: bundledVersesURL.path) {
+    let bundled = try VerseLibrary.load(data: Data(contentsOf: bundledVersesURL))
+    expect(bundled.count == 32, "bundled verse list should have 32 verses")
+    expect(bundled.first?.reference == "John 3:16", "bundled verse list should start with John 3:16")
+    expect(bundled.last?.reference == "Micah 6:8", "bundled verse list should end with Micah 6:8")
+} else {
+    print("Skipping bundled-verse check: run from WallVerseCore/ with App/Resources present.")
+}
+
 print("WallVerseCore checks passed")
 
 private extension JSONDecoder {

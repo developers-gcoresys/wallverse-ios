@@ -109,12 +109,17 @@ copies:
 tools/sync-content.sh ../wallverse-android/app/src/main/assets
 ```
 
+Run `tools/check-content.sh` to fail if the iOS bundle drifts from the canonical
+Android content. `swift run CoreChecks` also loads the bundled list and verifies
+its size and first/last entries.
+
 Do not add translations or editions until their rights and attribution are
 reviewed.
 
 ## Verification before release
 
 - [ ] `swift run CoreChecks` passes.
+- [ ] `tools/check-content.sh` passes against the Android repo.
 - [ ] `xcodebuild -scheme WallVerse -destination 'generic/platform=iOS Simulator' build` succeeds.
 - [ ] Backend `npm test` passes.
 - [ ] Sandbox purchase, renewal, cancel, refund, and restore produce the expected
